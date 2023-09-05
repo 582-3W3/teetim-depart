@@ -143,11 +143,40 @@ main {
     flex-grow: 1;
 }
 
+main.page-accueil {
+    width: 95vw;
+    margin: 2rem auto;
+}
+
+main.page-accueil .amorce {
+    background-image: url(../images/accueil.jpg);
+    background-size: cover;
+    background-position: 100% 60%;
+    padding: 3rem;
+    text-align: center;
+    color: var(--clr-texte-secondaire);
+}
+
+main.page-accueil .amorce h1 {
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    margin: auto;
+}
+
+main.page-accueil .amorce h2 {
+    font-size: clamp(1rem, 2vw, 2rem);
+}
+
+main.page-accueil .principal {
+    margin: 1rem auto;
+    width: 90vw;
+}
+
 /* Pied de page */
 footer {
     background-color: var(--clr-fond-tertiaire);
     color: var(--clr-texte-secondaire);
     font-size: 0.8rem;
+    padding-top: 1.5rem;
 }
 
 footer h2 {
@@ -226,6 +255,15 @@ footer .da {
 
     nav.principale .menu-controle {
         display: none;
+    }
+
+    main.page-accueil .amorce h1 {
+        margin: auto 12vw;
+    }
+    
+    main.page-accueil .principal {
+        margin: 1rem auto;
+        width: 70vw;
     }
 
     footer div.contenu {
