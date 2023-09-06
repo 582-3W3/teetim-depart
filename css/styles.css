@@ -138,12 +138,13 @@ nav.principale .separateur {
     background-color: var(--clr-fond-principale);
 }
 
+nav.principale a.actif {
+    border-bottom: 3px solid var(--clr-fond-actif);
+}
+
 /* Main */
 main {
     flex-grow: 1;
-}
-
-main.page-accueil {
     width: 95vw;
     margin: 2rem auto;
 }
@@ -158,7 +159,7 @@ main.page-accueil .amorce {
 }
 
 main.page-accueil .amorce h1 {
-    font-size: clamp(1.5rem, 5vw, 4rem);
+    font-size: clamp(1.5rem, 4vw, 4rem);
     margin: auto;
 }
 
